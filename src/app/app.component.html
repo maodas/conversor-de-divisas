@@ -1,3 +1,19 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-header>
+  <ion-title>DivisApp 20062839</ion-title>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-input type="number" placeholder="Cantidad en quetzales"[value]="cantidadEnQuetzales"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-button (click)="convertir()">Convertir</ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label></ion-label>
+    <ion-input type="number" placeholder="Cantidad en Dolares "[value]="convertir"></ion-input>
+  </ion-item>
+</ion-content>
+
